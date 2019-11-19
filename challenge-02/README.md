@@ -15,20 +15,26 @@ var z = soma(1,2)+5;
 8;
 
 // Declare uma nova variável, sem valor.
+
 var nova;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
-*/
-?
+
+function adicionar () {
+  var nova = 10;
+  VALOR = nova
+  return 'O valor da variavael é ' + VALOR;
+}
 
 // Invoque a função criada acima.
-?
+adicionar()
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/* A função retorna pela variável VALOR o valor atribuído a variavel nova.
+Imprimindo antes a frase 'O valor da variável é VALOR'  */
 
 /*
 Crie uma função com as seguintes características:
@@ -36,20 +42,27 @@ Crie uma função com as seguintes características:
 2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
-*/
-?
+
+function multiplicar(x,y,z) {
+  if ( x !== undefined || y !== undefined || z !== undefinied) {
+      return 'Preencha todos os valores corretamente!'
+  } else {
+        return (x*y*z)+2
+    }
+}
+
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+function multiplicar(1,2,z);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//Preencha todos os valores corretamente!
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+function multiplicar(1,2,3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+/* 8 */
 
 /*
 Crie uma função com as seguintes características:
