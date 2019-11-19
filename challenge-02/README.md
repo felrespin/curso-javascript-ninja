@@ -43,8 +43,8 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 
-function multiplicar(x,y,z) {
-  if ( x !== undefined || y !== undefined || z !== undefinied) {
+function calcular(x,y,z) {
+  if ( x > y || y = z || z >= x) {
       return 'Preencha todos os valores corretamente!'
   } else {
         return (x*y*z)+2
@@ -53,7 +53,7 @@ function multiplicar(x,y,z) {
 
 
 // Invoque a função criada acima, passando só dois números como argumento.
-function multiplicar(1,2,z);
+function multiplicar(1,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 //Preencha todos os valores corretamente!
