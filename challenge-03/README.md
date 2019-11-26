@@ -2,7 +2,7 @@
 
 ```js
 // Declarar uma variável qualquer, que receba um objeto vazio.
-?
+var myvar = {};
 
 /*
 Declarar uma variável `pessoa`, que receba suas informações pessoais.
@@ -16,15 +16,17 @@ As propriedades e tipos de valores para cada propriedade desse objeto devem ser:
 - `andando` - Boolean - recebe "falso" por padrão
 - `caminhouQuantosMetros` - Number - recebe "zero" por padrão
 */
-?
+var pessoa = {
+nome : 'Felipe', sobrenome : 'Resende', sexo : 'masculino', idade : 43, altura : 1.83, peso: 81, andando : false, caminhouQuantosMetros : 0}
 
 /*
 Adicione um método ao objeto `pessoa` chamado `fazerAniversario`. O método deve
 alterar o valor da propriedade `idade` dessa pessoa, somando `1` a cada vez que
 for chamado.
 */
-?
-
+pessoa.fazerAniversario = () {
+  pessoa.idade++
+}
 /*
 Adicione um método ao objeto `pessoa` chamado `andar`, que terá as seguintes
 características:
@@ -35,13 +37,19 @@ valor dessa propriedade a quantidade passada por parâmetro;
 - Ele deverá modificar o valor da propriedade `andando` para o valor
 booleano que representa "verdadeiro";
 */
-?
+pessoa.andar = function(){
+  var metrosCaminhados;
+  caminhouQuantosMetros + metrosCaminhados;
+  pessoa.andando = true;
+ }
 
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
 */
-?
+pessoa.parar = function(){
+pessoa.andando = false
+}
 
 /*
 Crie um método chamado `nomeCompleto`, que retorne a frase:
