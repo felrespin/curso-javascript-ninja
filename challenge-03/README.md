@@ -25,7 +25,7 @@ alterar o valor da propriedade `idade` dessa pessoa, somando `1` a cada vez que
 for chamado.
 */
 pessoa.fazerAniversario = () {
-  pessoa.idade++
+  pessoa.idade++;
 }
 /*
 Adicione um método ao objeto `pessoa` chamado `andar`, que terá as seguintes
@@ -40,7 +40,7 @@ booleano que representa "verdadeiro";
 pessoa.andar = function(){
   var metrosCaminhados;
   caminhouQuantosMetros + metrosCaminhados;
-  pessoa.andando = true;
+  pessoa.andando = true
  }
 
 /*
@@ -55,8 +55,8 @@ pessoa.andando = false
 Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
-pessoa.nomeCompleto = function(){
-  return "Olá! Meu nome é  " pessoa.nome + pessoa.sobrenome "!"; 
+pessoa.nomeCompleto1 = function(){
+  return "Olá! Meu nome é  " pessoa.nome + pessoa.sobrenome  + " !"; 
 }
 
 /*
@@ -70,50 +70,55 @@ pessoa.mostrarIdade = function(){
 Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
-?
-
+pessoa.mostrarPeso = function(){
+ return "Eu peso " +  pessoa.peso +" Kg.";
+}
 /*
 Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
-?
-
+pessoa.mostarAltura = function () {
+  return "Minha altura é " + pessoa.altura + " m.";
+}
 /*
 Agora vamos brincar um pouco com o objeto criado:
 Qual o nome completo da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.nomeCompleto(); // 'Felipe Resende' 
 
 /*
 Qual a idade da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.idade(); // 43
 
 /*
 Qual o peso da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.peso; // 81
 
 /*
 Qual a altura da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.altura; // 1.83
 
 /*
 Faça a `pessoa` fazer 3 aniversários.
 */
-?
+pessoa.fazerAniversario();
+pessoa.fazerAniversario();
+pessoa.fazerAniversario();
+
 
 /*
 Quantos anos a `pessoa` tem agora? (Use a instrução para responder e
 comentários inline ao lado da instrução para mostrar qual foi a resposta
 retornada)
 */
-?
+pessoa.idade; // 46
 
 /*
 Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
