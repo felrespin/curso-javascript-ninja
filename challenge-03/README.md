@@ -152,7 +152,8 @@ pessoa.caminhouQuantosMetros; //600
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
 Crie um método para o objeto `pessoa` chamado `apresentacao`. Esse método deve
 retornar a string:
-- "Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
+- "Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, 
+               só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
 
 Só que, antes de retornar a string, você vai fazer algumas validações:
 - Se o `sexo` de `pessoa` for "Feminino", a frase acima, no início da
@@ -165,8 +166,33 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-?
+pessoa.apresentacao = function(){
+	
+	var apresentaSexo = 'o';
+	var apresentaIdade = 'anos';
+	var apresentaMetrosCaminhados = 'metros';
+	
+	if( pessoa.sexo === 'feminino'){
+		apresentaSexo = 'a'; 
+	}
+	
+	 
+	if( pessoa.idade === 1) {
+		apresentaIdade = 'ano';
+	} 
+	
+	if( pessoa.caminhouQuantosMetros === 1) {
+		apresentaMetrosCaminhados = 'metro';	
+	} 
+
+	return  'Olá, eu sou ' + apresentaSexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + 
+			', tenho ' + pessoa.idade + ' ' + apresentaIdade + ', ' +
+			 pessoa.altura + ' de altura' + ', meu peso é ' + pessoa.peso + 'kg' + 
+			' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + apresentaMetrosCaminhados + '!';
+};
 
 // Agora, apresente-se ;)
-?
+pessoa.apresentacao 
+// "Olá, eu sou o Felipe Resende, tenho 43 anos,1.83 de altura, meu peso é 81kg e, só hoje, eu já caminhei 1 metro!"
+
 ```
