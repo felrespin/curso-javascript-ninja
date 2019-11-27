@@ -2,7 +2,7 @@
 
 ```js
 // Declarar uma variável qualquer, que receba um objeto vazio.
-var myvar = {};
+var myobject = {};
 
 /*
 Declarar uma variável `pessoa`, que receba suas informações pessoais.
@@ -37,10 +37,9 @@ valor dessa propriedade a quantidade passada por parâmetro;
 - Ele deverá modificar o valor da propriedade `andando` para o valor
 booleano que representa "verdadeiro";
 */
-pessoa.andar = function(){
-  var metrosCaminhados;
-  caminhouQuantosMetros + metrosCaminhados;
-  pessoa.andando = true
+pessoa.andar = function(metros){
+    caminhouQuantosMetros += metrosCaminhados;
+    pessoa.andando = true
  }
 
 /*
@@ -55,10 +54,9 @@ pessoa.andando = false
 Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
-pessoa.nomeCompleto1 = function(){
-  return "Olá! Meu nome é  " pessoa.nome + pessoa.sobrenome  + " !"; 
-}
-
+pessoa.nomeCompleto = function() {
+	return 'Olá, meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
+};
 /*
 Crie um método chamado `mostrarIdade`, que retorne a frase:
 - "Olá, eu tenho [IDADE] anos!"
@@ -124,30 +122,31 @@ pessoa.idade; // 46
 Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
 com metragens diferentes passadas por parâmetro.
 */
-?
+pessoa.andar(100);
+pessoa.andar(200);
+pessoa.andar(300);
 
 /*
 A pessoa ainda está andando? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.andando;
 
 /*
 Se a pessoa ainda está andando, faça-a parar.
 */
-?
-
+pessoa.parar();
 /*
 E agora: a pessoa ainda está andando? (Use uma instrução para responder e
 comentários inline ao lado da instrução para mostrar a resposta retornada)
 */
-?
+pessoa.andando; // false
 
 /*
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-?
+pessoa.caminhouQuantosMetros; //600
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
