@@ -32,7 +32,26 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
+function showTeamPosition(position) {
+	var allTeams = {
+		1: 'Flamengo',
+		2: 'Santos',
+		3: 'Palmeiras',
+		4: 'Grêmio',
+		5: 'Athlético-PR',
+	};
+
+	allTeams = position;
+	return position;
+}
+
+showTeamPosition(1);
+
+if (showTeamPosition() < 1 || showTeamPosition() >5) {
+	console.log('Não temos a informação do time que está na ' + position + 'ª posição.');
+} else {
+	console.log('O time que está em ' + position + 'º lugar é o ' + showTeamPosition(position) + ' .');
+}
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
